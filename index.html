@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario</title>
+</head>
+<body>
+    <header><h1 align= "center">Formulario</h1></header>
+    <section>
+        <form action="index.html" method="POST">
+        <article>
+            <fieldset>
+                <legend><h3>Informacion Personal</h3></legend>
+                <label for = "nombre">Name:</label>
+                <input type = "text" name = "nombre" placeholder="Cristian" required>
+                <label for = "apellido">Lastname:</label>
+                <input type = "text" name = "apellido" placeholder="Alfaro" required>
+                <label for = "date">Date:</label>
+                <input type="date" name= "date" value="1997-12-12">
+                <label for = "animal">Favorite animal:</label>
+                <input type = "text" name = "animal" placeholder="perro" required>
+            </fieldset>
+        </article>
+        <article>
+            <fieldset>
+                <legend><h3>Account</h3></legend>
+                <label for = "email">Email:</label>
+                <input type = "email" name = "email" placeholder="Cristian@gmail.com" required>
+                <label for = "contraseña">Contraseña:</label>
+                <input type = "password" name = "contraseña" required>
+                <label for = "contraseña">Confirmar Contraseña:</label>
+                <input type = "password" name = "contraseña" required>
+            </fieldset>
+        </article>
+        <article>
+            <fieldset>
+                <legend><h3>Contact</h3></legend>
+                <label for = "address">Address</label>
+                <input type = "text" name = "address" placeholder="col.Jardines de colon casa 34, block 2" required>
+                <label for = "city">City:</label>
+                <input type = "text" name = "city" placeholder="Lourdes" required>
+                <label for = "contry">Contry:</label>
+                <input type="text" name= "Contry" placeholder="El Salvador">
+                <label for = "cel">Phone number:</label>
+                <input type = "tel" name = "cel" placeholder="(+503)" required>
+            </fieldset>
+        </article>
+        <input type="submit" value="Send">
+        </form>
+    </section>
+</body>
+</html>
