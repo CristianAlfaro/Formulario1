@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Formulario</title>
+    <script> 
+        function comprobarClave(){ 
+               clave1 = document.f1.clave1.value 
+               clave2 = document.f1.clave2.value 
+        
+               if (clave1 == clave2) 
+                  alert("Las dos claves son iguales...\nRealizaríamos las acciones del caso positivo") 
+               else 
+                  alert("Las dos claves son distintas...\nRealizaríamos las acciones del caso negativo") 
+        } 
+        </script> 
 </head>
 <body>
     <header><h1 align= "center">Formulario</h1></header>
@@ -29,9 +40,9 @@
                 <label for = "email">Email:</label>
                 <input type = "email" name = "email" placeholder="Cristian@gmail.com" required>
                 <label for = "contraseña">Contraseña:</label>
-                <input type = "password" name = "contraseña" required>
+                <input type = "password"  name="clave1" size="20" required>
                 <label for = "contraseña">Confirmar Contraseña:</label>
-                <input type = "password" name = "contraseña" required>
+                <input type = "password"  name="clave2" size="20" required>
             </fieldset>
         </article>
         <article>
@@ -47,7 +58,8 @@
                 <input type = "tel" name = "cel" placeholder="(+503)" required>
             </fieldset>
         </article>
-        <input type="submit" value="Send">
+        <br>
+        <input type="submit" value="Send" onClick="comprobarClave()">
         </form>
     </section>
 </body>
